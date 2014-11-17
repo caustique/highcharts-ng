@@ -146,6 +146,9 @@ if (typeof module !== 'undefined' && typeof exports !== 'undefined' && module.ex
           mergedOptions.chart.height = config.size.height;
         }
       }
+			if (config.drilldown) {
+				mergedOptions.drilldown = config.drilldown;
+			}
       return mergedOptions;
     };
 
